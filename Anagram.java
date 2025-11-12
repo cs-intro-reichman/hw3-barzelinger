@@ -45,5 +45,5 @@ public class Anagram {
 	public static String randomAnagram(String str) {
 		// Replace the following statement with your code
 		return "";
-	}
+	} 
 }
