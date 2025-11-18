@@ -60,12 +60,16 @@ public class Anagram {
 		String final_string = "";
 		for (int i = 0; i< len; i++){
 			char letter = str.charAt(i);
-			// checks if there are any non letters in the string.
-			if ((letter <=90 && letter >= 67) || (letter <=122 && letter >= 97)){
+			// if capital letter
+			if (letter >= 67 && letter <=90) {
+				letter = (char) (letter + 32);
+				final_string = final_string + letter;
+			}
+			// if non capital letter
+			else if (letter >= 97 && letter <=122){
 				final_string = final_string + letter;
 			}
 		}
-		final_string = final_string.toLowerCase();
 		return final_string;
 	} 
 	   
