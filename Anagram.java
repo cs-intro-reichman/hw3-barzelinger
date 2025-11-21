@@ -61,7 +61,7 @@ public class Anagram {
 		for (int i = 0; i< len; i++){
 			char letter = str.charAt(i);
 			// if capital letter
-			if (letter >= 67 && letter <=90) {
+			if (letter >= 65 && letter <=90) {
 				letter = (char) (letter + 32);
 				final_string = final_string + letter;
 			}
